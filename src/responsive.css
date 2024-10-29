@@ -1,0 +1,414 @@
+/* Laptop - 1024px */
+@media only screen and (max-width: 1024px) {
+  .section-break {
+    margin-top: 4rem;
+  }
+  .hero-title {
+    font-size: 5rem;
+  }
+  .experience-title {
+    font-size: 2rem;
+  }
+  .experience-icon {
+    width: 15rem;
+  }
+  .footer-p {
+    font-size: 14px;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (max-width: 768px) {
+  .section-break {
+    margin-top: 4rem;
+  }
+  .hero {
+    padding: 0 1rem;
+    min-height: 900px;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .name {
+    font-size: 16px;
+  }
+
+  .experience-section {
+    flex-direction: column;
+    gap: 2rem;
+    /*     use this when using experience-icon
+      min-height: 75rem; */
+  }
+  .experience-icon {
+    /* width: 13rem;
+      position: relative;
+      top: 68rem;
+      left: 21rem;
+      margin: -127px;
+      transform: rotate(3deg); */
+    display: none;
+  }
+  .timeline {
+    width: 30%;
+  }
+  .experience-title {
+    font-size: 2rem;
+  }
+  .ul-wrapper {
+    line-height: 28px;
+  }
+
+  .project-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    /* border: none; */
+  }
+  .project-section-title {
+    font-size: 3rem;
+  }
+  .projects-flex-container {
+    justify-content: center;
+  }
+  .projects-flex-item {
+    margin: 10px 10px 10px 0;
+  }
+
+  .skills-wrapper {
+    flex-wrap: wrap;
+  }
+  .skills-title {
+    font-size: 3rem;
+  }
+  .skills-title-emoji {
+    height: auto;
+    width: 3.5rem;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-content {
+    margin-bottom: 2rem;
+  }
+  .footer-img {
+    width: 100%;
+  }
+  .footer-p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile - 450px - medium */
+@media only screen and (max-width: 450px) {
+  .section-break {
+    margin-top: 3rem;
+  }
+  .main {
+    padding: 2rem;
+  }
+  .hero {
+    padding: 0 1rem 2rem;
+    min-height: 650px;
+  }
+  .hero-wrapper {
+    margin-top: 6rem;
+  }
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .hero-image {
+    width: 12rem;
+    bottom: 22px;
+  }
+  .name {
+    font-size: 14px;
+  }
+
+  .experience-section {
+    flex-wrap: wrap;
+    gap: 4rem;
+    min-height: 89rem;
+  }
+  .experience-title {
+    font-size: 2rem;
+  }
+  .experience-icon {
+    display: block;
+    width: 11rem;
+    position: absolute;
+    top: 128.5rem;
+    left: 15rem;
+  }
+  .experience-item {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .designation-wrapper {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .designation {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .designation-icon {
+    width: 20px;
+    height: auto;
+  }
+  .timeline {
+    width: 100%;
+  }
+  .ul-wrapper {
+    line-height: 28px;
+  }
+
+  .skills-wrapper {
+    flex-wrap: wrap;
+  }
+  .skills-title {
+    font-size: 2rem;
+  }
+  .skills-title-emoji {
+    width: 2.5rem;
+  }
+  .skills {
+    width: 3rem;
+  }
+
+  .project-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+  }
+  .project-section-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .project-card-title {
+    font-size: 1.3rem;
+  }
+  .project-card-desc {
+    -webkit-line-clamp: 3;
+  }
+  .projects-flex-item {
+    width: 17rem;
+    margin: 10px 0;
+  }
+  .project-stack {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .btn {
+    padding: 0.3rem 0.4rem;
+  }
+
+  .footer {
+    margin: 2rem;
+    gap: 3rem;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .handshake-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .footer-content {
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-desc {
+    font-size: 1.8rem;
+  }
+  .footer-desc-span {
+    font-size: 1.8rem;
+  }
+  .footer-socials {
+    justify-content: center;
+    position: relative;
+    top: 14.5rem;
+    left: 5rem;
+    margin: -10px;
+  }
+  .footer-icon {
+    width: 1.8rem;
+  }
+  .footer-img {
+    height: 12rem;
+  }
+  .footer-p {
+    gap: 0.3rem;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+  .footer-mention {
+    margin-top: 2rem;
+  }
+}
+
+/* Mobile - 320px - smaller */
+@media only screen and (max-width: 320px) {
+  .section-break {
+    margin-top: 3rem;
+  }
+
+  .hero {
+    padding: 0 1rem;
+    min-height: 520px;
+  }
+  .hero-wrapper {
+    margin-top: 4rem;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-image {
+    bottom: 14px;
+    width: 9rem;
+  }
+  .name {
+    font-size: 12px;
+  }
+
+  .experience-section {
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    min-height: 84rem;
+  }
+  .experience-title {
+    font-size: 1.5rem;
+  }
+  .experience-icon {
+    display: block;
+    width: 10rem;
+    position: absolute;
+    top: 115rem;
+    left: 7rem;
+  }
+  .experience-item {
+    flex-direction: column;
+  }
+  .designation-wrapper {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .designation {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  .company {
+    font-style: italic;
+    font-size: 12px;
+  }
+  .timeline-sm {
+    font-size: 12px;
+    width: 58%;
+    text-align: end;
+  }
+  .timeline-sm::before {
+    content: "";
+  }
+  .ul-wrapper {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .skills-wrapper {
+    flex-wrap: wrap;
+  }
+  .skills-title {
+    font-size: 2rem;
+  }
+  .skills-title-emoji {
+    width: 2.5rem;
+  }
+  .skills {
+    width: 2.5rem;
+  }
+
+  .project-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    border: none;
+  }
+  .project-section-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .project-card-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+  .project-stack {
+    margin-top: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .project-card-desc {
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+  }
+  .projects-flex-item {
+    width: 12rem;
+    margin: 10px 0;
+  }
+  .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+  }
+
+  .footer {
+    margin: 2rem;
+    gap: 3rem;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .handshake-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .footer-content {
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-desc {
+    font-size: 1.5rem;
+  }
+  .footer-desc-span {
+    font-size: 1.5rem;
+  }
+  .footer-socials {
+    justify-content: center;
+    position: relative;
+    top: 11rem;
+    left: 1rem;
+    margin: -17px;
+  }
+  .footer-icon {
+    width: 1.5rem;
+  }
+  .footer-img {
+    height: 9rem;
+  }
+  .footer-p {
+    gap: 0.3rem;
+    letter-spacing: 0.5px;
+    font-size: 8px;
+  }
+  .footer-hearts {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-mention {
+    margin-top: 2rem;
+  }
+}

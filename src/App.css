@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-title: #000000c7;
+  --color-gray: #c4cad3;
+  --color-green: #818473;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #efe7dd;
+  max-width: 100vw;
+  /* cursor: url("https://fav.farm/🐁") 15 0, auto; */
+}
+
+.main {
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 760px;
+  border: 1px solid;
+  padding: 2rem;
+}
+
+/* icons */
+.html-icon {
+  color: #e34f26;
+  width: 5rem;
+  height: auto;
+}
+
+/* fonts */
+.cardo-regular {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cardo-bold {
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cardo-regular-italic {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.montserrat {
+  font-family: "Montserrat", serif;
+}
+.poppins {
+  font-family: "Poppins", serif;
+}
+
+/* || UTILITIES */
+
+.btn {
+  background-color: var(--background-color);
+  border: none;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  color: var(--color-title);
+  font-weight: 600;
+  /* background-color: #ddc6c1; */
+
+  /*  */
+  position: relative;
+  --border-size: 2px;
+  --background-color: #e1d7d5;
+  /* --card-accent-color: #af594c; */
+  --card-accent-color: #031e23;
+}
+
+.btn-arrow {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.btn-arrow-icon {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+/* ----- || Button Animations ----- */
+/* button animation - border pop */
+.btn-border-pop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color);
+  transition: top, left, bottom, right, 100ms ease-in-out;
+}
+
+.btn-border-pop:hover::before,
+.btn-border-pop:focus::before {
+  top: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+}
+
+/* button animation - background slide */
+.btn.btn-background-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--card-accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-in-out;
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+  transform: scaleX(1);
+}
+
+.btn.btn-background-slide {
+  z-index: 1;
+  transition: color 200ms ease-in-out;
+}
+
+.btn.btn-background-slide:hover,
+.btn.btn-background-slide:focus {
+  color: #e2e6eb;
+}
+
+/* ----- Button Animations ----- */
+
+.nobullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.section-break {
+  margin-top: 6rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+/* animations */
+.parrots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  /* additional */
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+/* ANIMATIONS */
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideRight {
+  animation: slideRight 2s ease-in 0.3s 1;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideLeft {
+  animation: slideLeft 2s ease-in 0.3s 1;
+}
+
+@keyframes rotateFull {
+  from {
+    transform: rotate(360deg) scale(0.5);
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.rotateFull {
+  animation: rotateFull 2.5s ease-in 0s 1;
+}
+
+/* zoom */
+@keyframes zoom {
+  0% {
+    transform: scale(var(--scaleStart));
+  }
+  50% {
+    transform: scale(var(--scaleMid));
+  }
+  100% {
+    transform: scale(var(--scaleEnd));
+  }
+}
+.zoom--fast {
+  --scaleStart: 0.3;
+  --scaleMid: 1.5;
+  --scaleEnd: 1;
+  animation: zoom 2s ease-in-out 0.5s;
+}
+
+/* rotate */
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 3s ease-in-out;
+}
