@@ -19,6 +19,10 @@
   gap: 0.3rem;
 }
 
+.project-a{
+  text-decoration: none;
+}
+
 .project-card {
   position: relative;
   background-color: #1b2059b5;
