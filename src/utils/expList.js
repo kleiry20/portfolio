@@ -18,10 +18,5 @@ export const experienceList = [
     icon: iconList[0],
     company: "Leanpitch Technologies",
   },
-  {
-    designation: "Web Development Intern",
-    timeline: "Dec '22 - Oct '23",
-    icon: iconList[0],
-    company: "Leanpitch Technologies",
-  },
+  
 ];
