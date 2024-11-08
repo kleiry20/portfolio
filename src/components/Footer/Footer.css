@@ -1,12 +1,11 @@
-/* footer section */
 .footer {
   min-height: 400px;
-  /* margin: 2rem 4rem; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 2rem;
   gap: 4rem;
+  font-family: "Montserrat", serif;
 }
 
 .footer-top {
@@ -15,7 +14,6 @@
 }
 
 .footer-name {
-  font-family: "Montserrat", serif;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 200;
@@ -33,7 +31,6 @@
   font-size: 4rem;
   width: 55%;
   font-weight: 300;
-  font-family: "Montserrat";
   margin: 0;
 }
 
@@ -42,7 +39,6 @@
   font-size: 4rem;
   width: 100%;
   font-weight: 300;
-  font-family: "Montserrat";
   margin: 0;
   display: flex;
   gap: 0.3rem;
@@ -66,7 +62,7 @@
   align-items: center;
   gap: 0.5rem;
   letter-spacing: 2.5px;
-  font-family: "Montserrat", serif;
+
   font-size: 14px;
 }
 
@@ -79,11 +75,4 @@
   color: black;
   font-style: italic;
   font-weight: 700;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  border: 1px solid green;
 }

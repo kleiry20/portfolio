@@ -23,44 +23,6 @@ export const Footer = () => {
             </h3>
           </div>
 
-          {/* <form className="contact-form" id="contact-form">
-          <label for="first">Your First Name</label>
-          <input
-            type="text"
-            placeholder="First"
-            id="first"
-            name="first"
-            required
-          />
-          <label for="last">Your Last Name</label>
-          <input
-            type="text"
-            placeholder="Last"
-            id="last"
-            name="last"
-            required
-          />
-
-          <label for="email">Your Email</label>
-          <input
-            type="email"
-            placeholder="you@email.com"
-            id="first"
-            name="first"
-            required
-          />
-          <label for="message">Your message</label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Type your message"
-            required
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>  */}
-
           <div className="footer-socials">
             <a href="https://www.linkedin.com/in/anushka-21" target="_blank">
               <img
