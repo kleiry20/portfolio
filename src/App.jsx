@@ -1,5 +1,5 @@
 import "./App.css";
-import "./responsive.css";
+import "./responsive2.css";
 import { Experience } from "./components/Experience/Experience";
 import { Footer } from "./components/Footer/Footer";
 import { Hero } from "./components/Hero/Hero";
