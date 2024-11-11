@@ -1,6 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import CoolCatsGIF from "../../assets/cool-cats-gif.gif";
+import LinkedIn from "../../assets/linkedin-logo.svg";
+import GitHub from "../../assets/github-logo.svg";
+import Mail from "../../assets/email-logo.svg";
+import Bento from "../../assets/bento-logo.svg"
 
 export const Footer = () => {
   return (
@@ -27,32 +31,32 @@ export const Footer = () => {
             <a href="https://www.linkedin.com/in/anushka-21" target="_blank">
               <img
                 className="footer-icon"
-                src="./assets/linkedin-logo.svg"
-                alt=""
+                src={LinkedIn}
+                alt="linkedin"
               />
             </a>
 
             <a href="https://github.com/kleiry20" target="_blank">
               <img
                 className="footer-icon"
-                src="./assets/github-logo.svg"
-                alt=""
+                src={GitHub}
+                alt="github"
               />
             </a>
 
             <a href="mailto:anushkasingh801@gmail.com" target="_blank">
               <img
                 className="footer-icon"
-                src="./assets/email-logo.svg"
-                alt=""
+                src={Mail}
+                alt="mail"
               />
             </a>
 
             <a href="https://bento.me/anushka-21" target="_blank">
               <img
                 className="footer-icon"
-                src="./assets/bento-logo.svg"
-                alt=""
+                src={Bento}
+                alt="bento"
               />
             </a>
           </div>

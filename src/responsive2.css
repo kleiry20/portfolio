@@ -54,7 +54,7 @@
     flex-wrap: wrap;
     gap: 0;
     justify-content: center;
-    /* border: none; */
+
   }
   .project-section-title {
     font-size: 3rem;
